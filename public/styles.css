@@ -1,0 +1,59 @@
+html, body {
+    height: 100%;
+}
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.sea-field-container {
+    display: flex;
+    justify-content: space-around;
+}
+.sea-field-container-inner {
+    display: flex;
+}
+.sea-field {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin: 32px;
+}
+.row {
+    display: flex;
+    position: relative;
+}
+.cell {
+    height: 32px;
+    width: 32px;
+    margin: 1px;
+    background-color: grey;
+    position: relative;
+}
+
+.ship {
+    background-color: darkgreen;
+}
+.ship.active {
+    background-color: darkred;
+
+}
+.active {
+    outline: 2px solid blue;
+    opacity: 0.8;
+}
+.info-row {
+color: white;
+}
+.missed-shot:before {
+    top: 11px;
+    left: 14px;
+    display: block;
+    position: absolute;
+    content: '\00ba';
+}
+
+.state-0 .cell:hover {
+    opacity: 0.8;
+}
